@@ -15,8 +15,13 @@
     ]
   },
   "dependencies": {
+    "@3id/connect": "^0.1.6",
     "@ant-design/icons": "^4.2.2",
     "@apollo/react-hooks": "^4.0.0",
+    "@ceramicnetwork/3id-did-resolver": "^1.2.7",
+    "@ceramicnetwork/http-client": "^1.0.7",
+    "@ceramicnetwork/stream-caip10-link": "^1.0.7",
+    "@ceramicstudio/idx": "^0.12.1",
     "@ramp-network/ramp-instant-sdk": "^2.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -31,6 +36,7 @@
     "arb-ts": "^0.0.18",
     "axios": "^0.20.0",
     "bnc-notify": "^1.5.0",
+    "dids": "^2.4.0",
     "dotenv": "^8.2.0",
     "eth-hooks": "^1.1.2",
     "ethers": "^5.3.0",
