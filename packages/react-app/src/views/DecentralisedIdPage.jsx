@@ -44,7 +44,8 @@ export default function DIDPage({
       await ceramic.setDID(did);
       const idx = createIDX(ceramic);
       // window.did = ceramic.did
-      setUser3Id(idx.id);
+      // setUser3Id(idx.id);
+      setUser3Id(idx.id.split('did:3:')[1]);
       // return idx.id;
       return;
     }
@@ -74,7 +75,7 @@ export default function DIDPage({
       {/*
         ⚙️ Here is an example UI that displays and sets the purpose in your smart contract:
       */}
-      <div style={{ border: "1px solid #cccccc", padding: 16, width: 400, margin: "auto", marginTop: 64 }}>
+      <div style={{ border: "1px solid #cccccc", padding: 16, width: 600, margin: "auto", marginTop: 64 }}>
         <h2>My Decentralised ID:</h2>
         <h4>did:3: {user3Id}</h4>
         <Button style={{ marginTop: 8 }} onClick={connect3Id}>
